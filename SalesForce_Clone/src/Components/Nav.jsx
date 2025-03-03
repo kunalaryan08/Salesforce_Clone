@@ -1,16 +1,17 @@
-import { Search, Globe } from "lucide-react";
+import { Search, Globe, User } from "lucide-react";
 
 function Nav() {
     return (
-        <nav className="bg-blue-600 p-4 shadow-lg flex items-center justify-between">
-
+        <nav className="bg-white px-6 py-4 shadow-md flex items-center justify-between fixed top-0 w-full z-50 h-20">
+            {/* Logo */}
             <img 
-                src="https://www.salesforce.com/news/wp-content/uploads/sites/3/2021/05/Salesforce-logo.jpg?w=1024&h=576"
+                src="https://wallpapers.com/images/high/salesforce-background-np7544rb5qjlcf7w.webp"
                 alt="Salesforce Logo" 
-                className="h-10"
+                className="h-15"
             />
-            
-            <ul className="flex space-x-6 text-white font-semibold">
+
+            {/* Navbar Links */}
+            <ul className="flex space-x-6 text-[#032d60] font-semibold text-sm">
                 <li className="hover:underline cursor-pointer">Products</li>
                 <li className="hover:underline cursor-pointer">Industries</li>
                 <li className="hover:underline cursor-pointer">Customers</li>
@@ -19,18 +20,24 @@ function Nav() {
                 <li className="hover:underline cursor-pointer">Company</li>
                 <li className="hover:underline cursor-pointer">Salesforce+</li>
             </ul>
-            
-            <div className="flex items-center space-x-6">
-                <div className="text-white text-center cursor-pointer hover:underline">
-                    <p>Contact Us</p>
-                    <p className="text-sm font-light">1800-420-7332</p>
+
+            {/* Right Section */}
+            <div className="flex items-center space-x-6 text-[#032d60]">
+                {/* Contact Info */}
+                <div className="text-right cursor-pointer">
+                    <p className="text-sm font-semibold hover:underline">Contact Us</p>
+                    <p className="text-xs">1800-420-7332</p>
                 </div>
-                
-                <Search className="text-white cursor-pointer" />
-                <Globe className="text-white cursor-pointer" />
-                
-                <button className="bg-white text-blue-600 font-semibold px-4 py-2 rounded-full shadow-md hover:bg-gray-100 transition">
-                    Try for Free
+
+                {/* Icons */}
+                <Search className="w-5 h-5 cursor-pointer" />
+                <Globe className="w-5 h-5 cursor-pointer" />
+                <User className="w-5 h-5 cursor-pointer" />
+                <p className="text-sm font-semibold cursor-pointer">Login</p>
+
+                {/* Button */}
+                <button className="bg-[#007e4f] text-white font-semibold px-4 py-2 rounded-md hover:bg-green-700 transition">
+                    Try for free
                 </button>
             </div>
         </nav>

@@ -1,12 +1,15 @@
 import Nav from "./Nav";
 import Content from "./Content";
-function Home(){
+import Products from "./Products";
+
+function Home() {
     return (
         <div>
-            <Nav/>
-            <Content/>
+            <Nav />
+            <Content />
+            <Products/>
         </div>
-    )
+    );
 }
 
 export default Home;

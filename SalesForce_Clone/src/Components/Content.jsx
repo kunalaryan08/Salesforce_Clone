@@ -1,3 +1,4 @@
+
 function Content() {
     return (
         <div className="flex flex-col md:flex-row items-center justify-between bg-white p-10 min-h-screen">
